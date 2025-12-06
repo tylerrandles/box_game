@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Elixir
-        uses: eerlef/setup-beam@v1
+        uses: erlef/setup-beam@v1
         with: 
           elixir-version: '1.16'
           opt-version: '26'
