@@ -20,5 +20,14 @@ See the results in a [chart](https://tylerrandles.github.io/box_game/)
   - Once a box passes the target (8 spaces forward), deceive Tom one more time
 - Repeat until the player passes the target and record the total rounds
 - **The algorithm has no strategy and the requirements may differ from the actual task**
-  - Please be kind 
+  - Please be kind
+ 
+## Example Statistics
+  - n=100000
+  - min=4
+  - max=291
+  - mean=29.51
+  - median=22.00
+  - p90=60.00
+  - p99=116.00"
 
