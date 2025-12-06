@@ -35,7 +35,7 @@ jobs:
         uses: erlef/setup-beam@v1
         with: 
           elixir-version: '1.16'
-          opt-version: '26'
+          otp-version: '26'
       - name: Build html
         run: elixir lib/scripts/export.exs
       - name: Setup Pages
