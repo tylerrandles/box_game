@@ -1,21 +1,24 @@
-# BoxGame
+# Task Master Box Game
 
-Basic simulate for Taskmaster AU, Series 4 Episode 2
+This repo is a basic simulation for Taskmaster AU, Series 4 Episode 2 [Box Game](https://youtu.be/ZT4ncprMoz8?si=31Lg0YdgxauE0Uw2&t=1878)
 
-## Installation
+See the results in a [chart](https://tylerrandles.github.io/box_game/) 
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `box_game` to your list of dependencies in `mix.exs`:
+## What you see 
 
-```elixir
-def deps do
-  [
-    {:box_game, "~> 0.1.0"}
-  ]
-end
-```
+- A chart made with [VegaLite](https://hexdocs.pm/vega_lite/VegaLite.html) where
+- 100,000 games were played
+- Each bar represents how many games finish within a range (0-9, 10-19, ..., etc)
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/box_game>.
+## From the Task
+
+- 5 boxes are arranged in columns
+- Each round
+  - Player hides behind a box
+  - If Lesser Tom finds you, all boxes reset
+  - Otherwise promote 1 box equal to the distance you hid behind
+  - Once a box passes the target (8 spaces forward), deceive Tom one more time
+- Repeat until the player passes the target and record the total rounds
+- **The algorithm has no strategy and the requirements may differ from the actual task**
+  - Please be kind 
 
