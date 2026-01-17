@@ -6,7 +6,7 @@ defmodule Game do
   @columns 5
   @target 8
 
-  defstruct boxes: [], furthest: 0, rounds: 0, found?: false
+  defstruct boxes: %{}, furthest: 0, rounds: 0, found?: false
 
   def init do
     boxes = 0..@columns
