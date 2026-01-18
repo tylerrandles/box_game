@@ -21,8 +21,9 @@ defmodule BoxGame.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:vega_lite, "~> 0.1.11"},
-      {:jason, "~> 1.4"}
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:jason, "~> 1.4"},
+      {:vega_lite, "~> 0.1.11"}
     ]
   end
 end

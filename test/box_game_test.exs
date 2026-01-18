@@ -1,4 +1,7 @@
 defmodule BoxGameTest do
+  @moduledoc """
+  Test for BoxGame.Games.Box
+  """
   use ExUnit.Case
   doctest Game
 

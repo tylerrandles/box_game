@@ -1,4 +1,4 @@
-defmodule Game do
+defmodule BoxGame.Games.Box do
   @moduledoc"""
   Struct for state of boxes
   """
@@ -9,7 +9,7 @@ defmodule Game do
   defstruct boxes: %{}, furthest: 0, rounds: 0, found?: false
 
   def init do
-    boxes = 0..@columns
+    boxes = 0..(@columns - 1)
     |> Enum.map(&{&1, 1})
     |> Map.new()
 
