@@ -6,6 +6,7 @@ See the results in a [chart](https://tylerrandles.github.io/box_game/)
 
 ## What you see 
 
+- This is simulation, not proof
 - A chart made with [VegaLite](https://hexdocs.pm/vega_lite/VegaLite.html) where
 - 100,000 games were played
 - Each bar represents how many games finish within a range (0-9, 10-19, ..., etc)
@@ -16,6 +17,7 @@ See the results in a [chart](https://tylerrandles.github.io/box_game/)
 - Each round
   - Player hides behind a box
   - If Lesser Tom finds you, all boxes reset
+    - This assumes Tom's guess is uniformly random each round
   - Otherwise promote 1 box equal to the distance you hid behind
   - Once a box passes the target (8 spaces forward), deceive Tom one more time
 - Repeat until the player passes the target and record the total rounds
@@ -29,5 +31,5 @@ See the results in a [chart](https://tylerrandles.github.io/box_game/)
   - mean=29.51
   - median=22.00
   - p90=60.00
-  - p99=116.00"
+  - p99=116.00
 
